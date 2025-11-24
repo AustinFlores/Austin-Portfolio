@@ -1,0 +1,36 @@
+.certificates-section {
+    padding-block: 7em;
+    background-color: #182628;
+}
+
+.certificate-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificates-list-column {
+    padding-top: 60px; /* Push down to align with the middle of the large title */
+}
+
+.certificates-title-column {
+    width: 60%;
+    text-align: right;
+}
+
+.certificate-entry {
+    margin-bottom: 1.5em;
+}
+.certificate-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+.certificate-date {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.certificates-title {
+    line-height: 0.9;
+}

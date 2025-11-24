@@ -1,0 +1,83 @@
+
+
+.navbar{
+  position:fixed;
+  width: 100%;
+  z-index: 3000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-logo {
+  font-family: 'Agale', sans-serif;
+  color: #182628;
+  font-size: 1.5rem;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em 6em;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+}
+
+.navbar-links a{
+  color: #182628;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+  transition: color 0.2s;
+}
+
+.navbar.scrolled-active {
+    /* Define the solid background color when scrolled */
+    background-color: rgba(24, 38, 40, 0.5); /* Dark solid background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled-active .navbar-logo a,
+.navbar.scrolled-active .navbar-links a {
+    /* Change text color to light when background becomes dark */
+    color: #f2f2f2; 
+}
+
+.navbar.scrolled-active .navbar-links a:hover {
+    /* Adjust hover color for the dark background */
+    color: #65ccb8; 
+}
+
+.navbar-links a.active-nav-item {
+    font-weight: bold;
+    /* Define a clear contrast color for the active item */
+    color: #65ccb8 !important; /* Use !important to override default or scrolled states */
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Ensure the active link stays visible regardless of scroll background */
+.navbar.scrolled-active .navbar-links a.active-nav-item {
+    color: #65ccb8 !important; 
+}
+
+/* 1. NEW STYLE: Active item in the default (transparent) state */
+.navbar-links a.active-nav-item {
+    font-weight: bold;
+    /* Use a high-contrast accent color against the white/light hero background */
+    color: #182628 !important; 
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Responsive adjustment for padding */
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0.6em 1em;
+    }
+}

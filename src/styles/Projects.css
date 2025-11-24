@@ -1,0 +1,79 @@
+.projects-page-section {
+    /* Padding to ensure content is below the fixed navbar, 
+       and generous space for the full page appearance. */
+    padding-top: 2.7em; 
+    padding-bottom: 100px;
+    background-color: #65ccb8;
+}
+
+.projects-page-section .project-filters {
+  margin-bottom: 1.4em;
+}
+
+.projects-page-title {
+    color: #182628 !important;
+
+}
+
+/* --- 3x2 Grid Structure --- */
+.projects-grid-full {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px; /* Vertical gap of 40px, horizontal gap of 30px */
+}
+
+/* --- Card Styling --- */
+.project-card-full-page {
+    text-align: center;
+    /* Optional: Add hover/interaction effects if this is a clickable card */
+}
+
+.project-thumbnail-placeholder-full {
+    width: 100%;
+    /* Aspect ratio height (e.g., 60% of the width for a landscape thumbnail) */
+    padding-top: 65%; 
+    background-color: #ccc; /* Gray placeholder color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.project-thumbnail-placeholder-full .placeholder-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.project-title-page {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #000;
+}
+
+.project-description-page {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-header-title {
+        font-size: 60px;
+    }
+    .projects-grid-full {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        gap: 30px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+     .projects-grid-full {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}

@@ -1,0 +1,38 @@
+.content-container {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.certificates-title, .projects-title{
+  margin:0;
+  color: #65CCB8 !important;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .certificate-layout {
+        flex-direction: column;
+    }
+    .certificates-list-column, .certificates-title-column {
+        width: 100%;
+        text-align: center;
+    }
+    .certificates-list-column {
+        padding-top: 0;
+        order: 2; /* Move list below the title */
+    }
+    .certificates-title-column {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-branding {
+        grid-column: span 2;
+        margin-bottom: 20px;
+    }
+}

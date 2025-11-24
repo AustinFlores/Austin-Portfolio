@@ -1,0 +1,14 @@
+.contact-section {
+    background: linear-gradient(to right,#57ba98, #90e3c6);
+    padding: 60px 0;
+    text-align: center;
+    padding-block: 7em;
+}
+.contact-text {
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+.contact-subtext {
+    margin-bottom: 2.4em;
+}
