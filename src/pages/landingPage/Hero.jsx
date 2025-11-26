@@ -15,7 +15,7 @@ function Hero() {
           <h1 className="graphic-designer">GRAPHIC DESIGNER</h1>
           <p className="hero-subtitle">Driven by creativity. Powered by code. Focused on real impact.</p>
           <div className="hero-btn-container">
-            <Link className="hero-btn btn" to="/projects-section">View my work</Link>
+            <a className="hero-btn btn" href='/Flores-Resume.pdf' rel="noopener noreferrer" target="_blank">View my Resume</a>
           </div>
         </div>
 

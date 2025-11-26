@@ -7,16 +7,20 @@ import Navbar from '../Navbar';
 import accLms from '../../media/acc-lms.png';
 import brandDesign from '../../media/brand-design.png';
 import digitalMarketing from '../../media/digital-marketing.png';
+import figma from '../../media/icons/figma.png';
+import react from '../../media/icons/react.png';
+import nodejs from '../../media/icons/node.png';
+import css from '../../media/icons/css.png';
+import mysql from '../../media/icons/mysql.png';
 
 // Define reusable tool map for consistency and icon rendering
 const toolMap = {
-    react: { icon: Code, title: 'React JS' },
-    node: { icon: Server, title: 'Node.js' },
-    css: { icon: Layout, title: 'CSS' },
+    react: { icon: react, title: 'React JS' },
+    node: { icon: nodejs, title: 'Node.js' },
+    css: { icon: css, title: 'CSS' },
     mongodb: { icon: Database, title: 'MongoDB' },
-    figma: { icon: Palette, title: 'Figma' },
-    tailwind: { icon: Zap, title: 'Tailwind CSS' },
-    database: { icon: Database, title: 'MySQL' }, // Generic placeholder
+    figma: { icon: figma, title: 'Figma' },
+    database: { icon: mysql, title: 'MySQL' },
 };
 
 // --- Updated Project Data with Tool IDs ---
@@ -27,7 +31,7 @@ const projectData = [
         category: "Web App", 
         description: "Modern LMS for efficient library operations.", 
         image: accLms,
-        toolsUsed: ['react', 'css', 'tailwind', 'node', 'database'], // List of tool IDs
+        toolsUsed: ['react', 'css', 'node', 'database'], // List of tool IDs
         imagePlaceholder: true 
     },
     { 
@@ -57,14 +61,13 @@ const ToolIconsList = ({ toolsUsed }) => (
         {toolsUsed.map(toolId => {
             const tool = toolMap[toolId];
             if (!tool) return null;
-            const IconComponent = tool.icon;
             return (
                 <div 
                     key={toolId} 
                     className="tool-icon-wrapper" 
                     title={tool.title} // Tooltip functionality via title attribute
                 >
-                    <IconComponent className="tool-icon-small" />
+                    <img src={tool.icon} alt={tool.title} className="tool-icon-small" />
                 </div>
             );
         })}
