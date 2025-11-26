@@ -35,8 +35,8 @@ const Contact = () => {
                         GET IN<br/>TOUCH
                     </h2>
                     <p className="contact-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean rutrum volutpat justo, 
-                        quis finibus odio commodo et. Mauris sit amet sapien a lacus aliquam dictum.
+                        Let’s build something great.
+Have a question, idea, or project in mind? Send me a message and I’ll get back to you as soon as possible.
                     </p>
                 </div>
                 
